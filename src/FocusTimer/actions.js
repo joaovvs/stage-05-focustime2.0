@@ -13,12 +13,19 @@ export function toggleRunning(){
  }
 
  export function increaseMinutes(){
+    if(state.minutes < 60){  
     state.minutes = Number(state.minutes)+5;
     timer.updateDisplay();
+    }
+    sounds.buttonPressAudio.play();
+    
 }
 
 
 export function decreaseMinutes(){
+    if(state.minutes > 0){
     state.minutes = Number(state.minutes)-5;
     timer.updateDisplay();
+    }
+    sounds.buttonPressAudio.play();
 }
