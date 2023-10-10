@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: clamp(40%, 1% + 2vw, 62,5%);
+
+    --tt-color: hsl(240, 6%, 21%);
+    --bg-white: hsl(0, 0%, 100%);
+    --bg-button:  hsl(240, 9%, 89%);
+    --bt-selected: hsl(194, 97%, 31%);
+    --tt-color-highlight: hsl(0, 0%, 100%);
+}
+
+
+body{
+    background-color: var(--bg-white);
+    display: grid;
+    height: 100vh;
+
+    place-content: center;
+
+}
+
+#app{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 19.2rem;
+}
+
+
+#timer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 9.6rem;
+    font-weight: medium;
+}
+
+.flex{
+    display: flex;
+}
+
+#controls{
+    display: flex;
+    gap: 4rem
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+#controls button{
+    border: none;
+    background-color: transparent;
+    font-size: 4.8rem;
+}
+
+.sounds{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
+}
+.card{
+    background-color: var(--bg-button);
+    border-radius: 2.4rem;
+
+    padding: 4.8rem 4.1rem;
+
+    cursor: pointer;
+
+
+}
+
+.icon{
+    fill: var(--tt-color);
+}
+
+.card.playing {
+    
+    background-color: var(--bt-selected);
+
+}
+
+.card.playing .icon{ 
+    fill: white;
+}
+
+.running .play,
+html:not(.running) .stop 
+{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.sr-only{ 
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow:hidden;
+
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
