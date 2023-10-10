@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer 2.0</title>
+</head>
+<body>
+    <div id="app">
+        <div class="timer">
+            <span>25</span>
+            <span>:</span>
+            <span>00</span>
+            <button
+                data-action="toggleRunning" 
+                class="play"><img src="./assets/play.svg" alt="Botão play">
+                <span class="sr-only">Iniciar contador</span>
+            </button>
+            <button 
+                data-action="toggleRunning"
+                class="stop"><img src="./assets/stop.svg" alt="Botão parar"></button>
+                <span class="sr-only">Parar contador</span>
+            <button
+                data-action="increment"
+                class="more"><img src="./assets/plus.svg" alt="Botão +"></button>
+                <span class="sr-only">Incrementar o contador em 5 segundos</span>
+            <button
+                data-action="decrement"
+                class="less">  <img src="./assets/dash.svg" alt="Botão -">
+                <span class="sr-only">Decrementar o contador em 5 segundos</span>
+            </button>
+        </div>
+        <div class="sunds">
+            <div class="card">
+                <button>
+                    <img src="./assets/tree.svg" alt="Íconde de árvore">
+                    <span class="sr-only">Clique para tocar o som de floresta</span>
+                </button>
+                <button>
+                    <img src="./assets/cloud.svg" alt="Ícone de núvem com gotas de chuva">
+                    <span class="sr-only">Clique para tocar o som de chuva</span>
+                </button>
+                <button>
+                    <img src="./assets/house.svg" alt="Ícone de uma casa representando uma cafeteria">
+                    <span class="sr-only">Clique para tocar o som de cafeteria</span>
+                </button>
+                <button>
+                    <img src="./assets/fire.svg" alt="Ícone de uma chama">
+                    <span class="sr-only">Clique para tocar o som de lareira</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
