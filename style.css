@@ -61,7 +61,7 @@ button{
     font-size: 4.8rem;
 }
 
-.sounds{
+#sounds{
     display: grid;
     grid-template-columns: max-content max-content;
     column-gap: 3.2rem;
@@ -80,10 +80,11 @@ button{
 
 .icon{
     fill: var(--tt-color);
+    pointer-events: none;
 }
 
 .card.playing {
-    
+  
     background-color: var(--bt-selected);
 
 }

@@ -18,4 +18,19 @@ export function registerControls() {
 
         console.log (actions);
     })
+
 }
+
+
+export function registerSoundCard(){
+    
+    el.soundCards.addEventListener('click', (event) =>{
+        const action = event.target.dataset.action;
+        if(typeof actions[action] != "function") {
+            return;
+        }
+        actions[action]();
+    })
+}
+
+

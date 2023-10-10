@@ -29,3 +29,54 @@ export function decreaseMinutes(){
     }
     sounds.buttonPressAudio.play();
 }
+
+export function reset(){
+    state.isRunning = false;
+    document.documentElement.classList.toggle('running');
+    timer.updateDisplay();
+}
+
+export function playForest(){
+    state.isMute =     
+        el.soundCards.querySelector('.forest').classList.toggle('playing');
+
+    if(state.isMute){
+        sounds.forestSound.play();
+        return
+    }
+    sounds.forestSound.pause();
+}
+
+export function playRain(){
+    
+    state.isMute = 
+    el.soundCards.querySelector('.rain').classList.toggle('playing');
+    if(state.isMute){
+        sounds.rainSound.play();
+        return
+    }
+    sounds.rainSound.pause();
+}
+
+export function playCoffeeShop(){
+    
+    state.isMute = 
+    el.soundCards.querySelector('.coffeeShop').classList.toggle('playing');
+    if(state.isMute){
+        sounds.coffeeShopSound.play();
+        return
+    }
+    sounds.coffeeShopSound.pause();
+}
+
+
+export function playFirePlace(){
+    
+    state.isMute = 
+    el.soundCards.querySelector('.firePlace').classList.toggle('playing');
+    if(state.isMute){
+        sounds.fireplaceSound.play();
+        return
+    }
+    sounds.fireplaceSound.pause();
+}

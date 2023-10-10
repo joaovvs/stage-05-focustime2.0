@@ -1,6 +1,7 @@
 import * as el from './elements.js'
 import { kichenTimer } from './sounds.js';
 import state from './state.js';
+import { reset } from './actions.js'
 
 export function countDown() {
     
