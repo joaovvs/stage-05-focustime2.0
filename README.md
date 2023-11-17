@@ -35,6 +35,6 @@ O desafio consiste na criação de uma aplicação para registrar o tempo de foc
 
 ## Stack utilizada
 
-**Front-end:** JavaScript, HTML e CSS
+**Front-end:** JavaScript, HTML5 e CSS3
 
 
